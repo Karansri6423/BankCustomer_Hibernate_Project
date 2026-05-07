@@ -43,9 +43,7 @@ Hibernate ORM
        ↓
 MySQL Database
 
----
-
-** 📂 Project Structure **
+# 📂 Project Structure 
 bank_hibernate/
 │
 ├── customer.java
@@ -58,7 +56,7 @@ bank_hibernate/
 
 ---
 
-**🗄️ Hibernate Concepts Used**
+#🗄️ Hibernate Concepts Used**
 @Entity
 @Id
 @GeneratedValue
