@@ -1,60 +1,36 @@
-**📌 Project Overview**
+# 💳 Bank Customer Management System
 
-This project is a simple Bank Customer Management System developed using Java, Hibernate, and MySQL.
+A console-based **Bank Customer Management System** developed using **Java, Hibernate ORM, and MySQL**.  
+This project follows a **Layered Architecture** approach and performs complete CRUD operations on customer data.
 
-**It follows a layered architecture using:**
+---
 
-Controller Layer
-Service Layer
-DAO Layer
-Hibernate ORM
-MySQL Database
+# 📌 Features
 
-**The application allows users to perform basic customer operations such as:**
+✅ Add New Customer  
+✅ View All Customers  
+✅ Search Customer By ID  
+✅ Update Customer Details  
+✅ Delete Customer  
+✅ Auto Increment Customer ID  
+✅ Hibernate ORM Integration  
+✅ MySQL Database Connectivity  
 
-Add Customer
-View All Customers
-Search Customer by ID
-Update Customer Details
-Delete Customer
+---
 
+# 🛠️ Technologies Used
 
-**🛠️ Technologies Used**
-☕ Java
-🗄️ MySQL
-🔥 Hibernate ORM
-📦 Maven
-🧠 OOP Concepts
-🏗️ Layered Architecture
+- ☕ Java
+- 🔥 Hibernate ORM
+- 🗄️ MySQL
+- 📦 Maven
+- 🧠 OOP Concepts
 
+---
 
-**📂 Project Structure**
-bank_hibernate/
-│
-├── customer.java          // Entity class
-├── Dao.java               // Database operations
-├── service.java           // Business logic layer
-├── controller.java        // User input handling
-├── userApplication.java   // Main class
-│
-├── hibernate.cfg.xml      // Hibernate configuration
+# 🏗️ Project Architecture
 
-
-**⚙️ Features**
-✅ Insert Customer
-Add customer details
-Auto-generated customer ID
-Balance validation
-✅ View All Customers
-Fetch all customer records from database
-✅ Search Customer By ID
-Retrieve customer using primary key
-✅ Update Customer
-Update customer balance/details
-✅ Delete Customer
-Remove customer using customer ID
-
-**🏗️ Architecture Flow**
+```text
 UserApplication
        ↓
 Controller Layer
@@ -67,6 +43,20 @@ Hibernate ORM
        ↓
 MySQL Database
 
+---
+
+** 📂 Project Structure **
+bank_hibernate/
+│
+├── customer.java
+├── controller.java
+├── service.java
+├── Dao.java
+├── userApplication.java
+│
+├── hibernate.cfg.xml
+
+---
 
 **🗄️ Hibernate Concepts Used**
 @Entity
@@ -77,19 +67,50 @@ Session
 Transaction
 HQL Queries
 
+---
 
-**📌 Example Hibernate Operations**
-Insert
-session.save(customerObject);
-Select By ID
-session.get(customer.class, id);
-Select All
-session.createQuery("from customer", customer.class).list();
-Update
-session.update(customerObject);
-Delete
-session.remove(customerObject);
+**⚙️ Database Configuration**
+<property name="hibernate.connection.url">
+jdbc:mysql://localhost:3306/bankCustomer_db?createDatabaseIfNotExist=true
+</property>
 
+<property name="hibernate.connection.username">root</property>
+<property name="hibernate.connection.password">your_password</property>
+
+<property name="hibernate.hbm2ddl.auto">update</property>
+
+---
+
+**▶️ How To Run**
+1️⃣ Clone Repository
+git clone https://github.com/your-username/your-repository-name.git
+
+2️⃣ Open Project
+Open the project in:
+-Eclipse
+-IntelliJ IDEA
+
+3️⃣ Configure Database
+Update MySQL username and password in:
+hibernate.cfg.xml
+
+4️⃣ Run Project
+Run:
+userApplication.java
+
+---
+
+**📸 Sample Console Menu**
+---- Bank Customer System ----
+
+1. Insert Customer
+2. View All Customers
+3. Search Customer By ID
+4. Update Customer
+5. Delete Customer
+6. Exit
+
+---
 
 **🧠 Learning Outcomes**
 
@@ -97,46 +118,24 @@ Through this project, I learned:
 
 Hibernate ORM fundamentals
 CRUD operations using Hibernate
-Layered architecture implementation
-Entity mapping
+Entity Mapping
 HQL Queries
-Database connectivity using Hibernate
-Maven dependency management
+Layered Architecture
+Session & Transaction Management
+MySQL integration with Hibernate
 
+---
 
-**▶️ How to Run**
-Clone the repository
-git clone <your-github-repository-link>
-Open project in Eclipse/IntelliJ
-Configure MySQL database
-Update database credentials in:
-hibernate.cfg.xml
-Run:
-userApplication.java
-
-**🗃️ Database Configuration**
-<property name="hibernate.connection.url">
-jdbc:mysql://localhost:3306/bankCustomer_db?createDatabaseIfNotExist=true
-</property>
-
-
-**📸 Sample Operations**
-1. Insert Customer
-2. View All Customers
-3. Search Customer By ID
-4. Update Customer
-5. Delete Customer
-
-
-**📌 Future Enhancements**
-Login Authentication
-Transaction Management
+**Future Enhancements**
+User Authentication
 Deposit & Withdraw Module
 Exception Handling
 Spring Boot Integration
-REST API Development
+REST APIs
+GUI Interface
 
+---
 
 **👨‍💻 Author**
 
-**Karan Khabale**
+Karan Khabale
