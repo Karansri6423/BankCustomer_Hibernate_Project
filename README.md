@@ -42,8 +42,13 @@ DAO Layer
 Hibernate ORM
        ↓
 MySQL Database
+```
 
-# 📂 Project Structure 
+---
+
+# 📂 Project Structure
+
+```text
 bank_hibernate/
 │
 ├── customer.java
@@ -53,21 +58,25 @@ bank_hibernate/
 ├── userApplication.java
 │
 ├── hibernate.cfg.xml
+```
 
 ---
 
-#🗄️ Hibernate Concepts Used**
-@Entity
-@Id
-@GeneratedValue
-SessionFactory
-Session
-Transaction
-HQL Queries
+# 🗄️ Hibernate Concepts Used
+
+- `@Entity`
+- `@Id`
+- `@GeneratedValue`
+- `SessionFactory`
+- `Session`
+- `Transaction`
+- `HQL Queries`
 
 ---
 
-**⚙️ Database Configuration**
+# ⚙️ Database Configuration
+
+```xml
 <property name="hibernate.connection.url">
 jdbc:mysql://localhost:3306/bankCustomer_db?createDatabaseIfNotExist=true
 </property>
@@ -76,29 +85,46 @@ jdbc:mysql://localhost:3306/bankCustomer_db?createDatabaseIfNotExist=true
 <property name="hibernate.connection.password">your_password</property>
 
 <property name="hibernate.hbm2ddl.auto">update</property>
+```
 
 ---
 
-**▶️ How To Run**
-1️⃣ Clone Repository
+# ▶️ How To Run
+
+## 1️⃣ Clone Repository
+
+```bash
 git clone https://github.com/your-username/your-repository-name.git
+```
 
-2️⃣ Open Project
+## 2️⃣ Open Project
+
 Open the project in:
--Eclipse
--IntelliJ IDEA
 
-3️⃣ Configure Database
+- Eclipse
+- IntelliJ IDEA
+
+## 3️⃣ Configure Database
+
 Update MySQL username and password in:
-hibernate.cfg.xml
 
-4️⃣ Run Project
+```text
+hibernate.cfg.xml
+```
+
+## 4️⃣ Run Project
+
 Run:
+
+```text
 userApplication.java
+```
 
 ---
 
-**📸 Sample Console Menu**
+# 📸 Sample Console Menu
+
+```text
 ---- Bank Customer System ----
 
 1. Insert Customer
@@ -107,33 +133,35 @@ userApplication.java
 4. Update Customer
 5. Delete Customer
 6. Exit
+```
 
 ---
 
-**🧠 Learning Outcomes**
+# 🧠 Learning Outcomes
 
 Through this project, I learned:
 
-Hibernate ORM fundamentals
-CRUD operations using Hibernate
-Entity Mapping
-HQL Queries
-Layered Architecture
-Session & Transaction Management
-MySQL integration with Hibernate
+- Hibernate ORM fundamentals
+- CRUD operations using Hibernate
+- Entity Mapping
+- HQL Queries
+- Layered Architecture
+- Session & Transaction Management
+- MySQL integration with Hibernate
 
 ---
 
-**Future Enhancements**
-User Authentication
-Deposit & Withdraw Module
-Exception Handling
-Spring Boot Integration
-REST APIs
-GUI Interface
+# 🚀 Future Enhancements
+
+- User Authentication
+- Deposit & Withdraw Module
+- Exception Handling
+- Spring Boot Integration
+- REST APIs
+- GUI Interface
 
 ---
 
-**👨‍💻 Author**
+# 👨‍💻 Author
 
-Karan Khabale
+**Karan Khabale**
